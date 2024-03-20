@@ -10,7 +10,6 @@ export default function App() {
 
   return (
     <View>
-      <Text> First View </Text>
       <CustomInput control={control} name="Sample Input" />
 
       <StatusBar
