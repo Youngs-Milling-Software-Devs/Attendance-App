@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { StatusBar, StatusBarStyle, Text, View } from "react-native";
+import { StatusBar, Text, View } from "react-native";
 
 export default function App() {
   return (
