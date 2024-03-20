@@ -1,23 +1,21 @@
 ### [Github Task Link]
 
-// Task link
-
 ### [Commands]
 
-// Commands to run the app
+`command`
 
 ### [Pre-Conditions]
 
-// Things to consider before firing up
+None
 
 ### [Expected Output]
 
-// The output
+None
 
 ### [Notes]
 
-// Additional Notes
+None
 
 ### [Screenshots]
 
-// Captured screenshots of the working task/feature
+None
