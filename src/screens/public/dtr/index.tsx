@@ -5,7 +5,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
 
-export const DtrScreen = () => {
+export const BottomScreenNavigator = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen

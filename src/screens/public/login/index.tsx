@@ -67,7 +67,7 @@ export const LoginScreen = () => {
           <Button
             icon="camera"
             mode="contained"
-            onPress={() => navigation.navigate(EPublicScreen.DTR)}
+            onPress={() => navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR)}
             style={loginButton}>
             Login
           </Button>

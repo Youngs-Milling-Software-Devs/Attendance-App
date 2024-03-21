@@ -1,6 +1,6 @@
 export enum EPublicScreen {
   LOGIN = "Login",
-  DTR = "Dtr",
+  BOTTOM_NAVIGATOR = "Dtr",
   ATTENDANCE = "Attendance",
   COMPENSATION = "Compensation",
 }
