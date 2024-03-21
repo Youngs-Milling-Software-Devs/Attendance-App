@@ -1,3 +1,10 @@
+export enum EPublicScreen {
+  LOGIN = "Login",
+  DTR = "Dtr",
+  ATTENDANCE = "Attendance",
+  COMPENSATION = "Compensation",
+}
+
 export enum Endpoint {
   USERMANAGEMENT = "http://192.168.1.200:8080", // production api & port
   HRMIS = "http://192.168.1.2:3031", // sandbox api & port
