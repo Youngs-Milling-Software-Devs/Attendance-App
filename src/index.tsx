@@ -3,8 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeStackNavigatorParamlist } from "../type";
 import { LoginScreen } from "./screens/public/login";
-import { BottomScreenNavigator } from "./screens/public/dtr";
 import { EPublicScreen } from "./constants/enums";
+import { BottomScreenNavigator } from "./screens/public/bottomScreenNavigator";
 
 export default function App() {
   const Stack = createNativeStackNavigator<HomeStackNavigatorParamlist>();

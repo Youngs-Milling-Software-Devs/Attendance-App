@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AttendanceScreen } from "../attendance";
-import { CompensationScreen } from "../compensation";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { AttendanceScreen } from "./attendance";
+import { CompensationScreen } from "./compensation";
 
 const Tab = createBottomTabNavigator();
 
