@@ -4,9 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeStackNavigatorParamlist } from "../type";
 import { LoginScreen } from "./screens/public/login";
 import { EPublicScreen } from "./constants/enums";
-import { BottomScreenNavigator } from "./screens/public/bottomScreenNavigator";
+import { BottomScreenNavigator } from "./bottomNavigator";
 
-export default function App() {
+export default function MainNavigator() {
   const Stack = createNativeStackNavigator<HomeStackNavigatorParamlist>();
 
   return (
