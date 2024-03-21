@@ -8,6 +8,7 @@ const CustomInput = ({
   mode = "outlined",
   name,
   control,
+  ...props
 }: customInputProps) => {
   return (
     <Controller
@@ -23,6 +24,7 @@ const CustomInput = ({
             value={value}
             onChangeText={onChange}
             onBlur={onBlur}
+            {...props}
           />
           {error && <Text children={error.message} />}
         </>
