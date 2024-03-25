@@ -8,8 +8,6 @@ const styles = StyleSheet.create({
   calendarContainer: {
     width: "100%",
     height: "100%",
-    // borderWidth: 1,
-    // borderColor: "blue",
   },
 });
 
