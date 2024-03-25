@@ -2,7 +2,6 @@ import { Text, View, FlatList, FlatListProps } from "react-native";
 import { styles } from "../screens/public/compensation/style";
 
 export type valueType = {
-  key: number;
   description: string;
   value: string;
 };
@@ -13,11 +12,11 @@ export type dataTypes = {
   data: valueType[];
 };
 
-interface propsType extends Pick<FlatListProps<dataTypes>, "data"> {
+interface CustomFlatListProps extends Pick<FlatListProps<dataTypes>, "data"> {
   data: dataTypes[];
 }
 
-const CustomFlatList = (props: propsType) => {
+const CustomFlatList = (props: CustomFlatListProps) => {
   const { label, subLabelContainer } = styles;
 
   return (
@@ -27,8 +26,8 @@ const CustomFlatList = (props: propsType) => {
       renderItem={({ item }) => (
         <>
           <Text style={label}>{item.title}</Text>
-          {item.data.map((value) => (
-            <View key={value.key} style={subLabelContainer}>
+          {item.data.map((value, key) => (
+            <View key={key} style={subLabelContainer}>
               <Text>{value.description}</Text>
               <Text>{value.value}</Text>
             </View>
