@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import { Agenda, AgendaProps } from "react-native-calendars";
 
 const CustomCalendar = (props: AgendaProps) => {

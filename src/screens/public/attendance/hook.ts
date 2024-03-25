@@ -1,13 +1,4 @@
-import { AgendaEntry, AgendaSchedule } from "react-native-calendars";
-import { HomeScreenNavigationProp } from "../../../../type";
-import { useNavigation } from "@react-navigation/native";
-import { View, Text } from "react-native";
-
-declare type DOT = {
-  key?: string;
-  color: string;
-  selectedDotColor?: string;
-};
+import { AgendaSchedule } from "react-native-calendars";
 
 interface MarkedDates {
   [date: string]: {
