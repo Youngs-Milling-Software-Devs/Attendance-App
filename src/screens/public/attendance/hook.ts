@@ -10,11 +10,6 @@ interface MarkedDates {
   };
 }
 
-interface AgendaItem {
-  name: string;
-  day: string;
-}
-
 export const useHooks = () => {
   const markDates: MarkedDates = {
     "2024-03-19": {
