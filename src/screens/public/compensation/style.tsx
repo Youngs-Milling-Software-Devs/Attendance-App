@@ -5,11 +5,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: "100%",
     height: "100%",
+    flex: 1,
+    justifyContent: "space-between",
   },
   filterContainer: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
   },
   header: {
     textAlign: "center",
@@ -47,6 +50,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-end",
     alignItems: "center",
+  },
+  contentContainer: {
+    paddingBottom: 7,
+    width: "100%",
+    height: "92%",
   },
 });
 

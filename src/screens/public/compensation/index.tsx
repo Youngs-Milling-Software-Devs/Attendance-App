@@ -26,6 +26,7 @@ export const CompensationScreen = () => {
     labelSubHeader,
     dropDownContainer,
     cutOffContainer,
+    contentContainer,
   } = styles;
 
   return (
@@ -58,16 +59,17 @@ export const CompensationScreen = () => {
           />
         </View>
       </View>
+      <View style={contentContainer}>
+        <Text style={header}>Molave Youngs Milling Group</Text>
+        <Text style={subHeader}>
+          Mabini St., Maloloy-on, Molave, Zamboanga Del Sur
+        </Text>
 
-      <Text style={header}>Molave Youngs Milling Group</Text>
-      <Text style={subHeader}>
-        Mabini St., Maloloy-on, Molave, Zamboanga Del Sur
-      </Text>
+        <Text style={labelHeader}>Bryan Villarubia</Text>
+        <Text style={labelSubHeader}>March 1-15, 2024</Text>
 
-      <Text style={labelHeader}>Bryan Villarubia</Text>
-      <Text style={labelSubHeader}>March 1-15, 2024</Text>
-
-      <CustomFlatList data={data} />
+        <CustomFlatList data={data} />
+      </View>
     </View>
   );
 };
