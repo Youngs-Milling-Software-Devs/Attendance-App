@@ -5,8 +5,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: "100%",
     height: "100%",
-    // borderWidth: 1,
-    // borderColor: "red",
+  },
+  filterContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   header: {
     textAlign: "center",
@@ -24,6 +27,7 @@ const styles = StyleSheet.create({
   labelSubHeader: {
     marginBottom: 15,
   },
+  // label and subLabelContainer CSS is used in FlatList Component
   label: {
     fontWeight: "900",
   },
@@ -32,6 +36,17 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+  },
+  dropDownContainer: {
+    width: "50%",
+  },
+  cutOffContainer: {
+    padding: 0,
+    gap: 0,
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
 });
 

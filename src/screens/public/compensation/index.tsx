@@ -1,23 +1,64 @@
-import { Text, View, SectionList, FlatList } from "react-native";
+import { Text, View } from "react-native";
 import { useHooks } from "./hook";
 import { styles } from "./style";
 import CustomFlatList from "../../../components/FlatList";
-import { Card } from "react-native-paper";
+import { RadioButton } from "react-native-paper";
+import CustomDropdown from "../../../components/Dropdown";
 
 export const CompensationScreen = () => {
-  const { data } = useHooks();
+  const {
+    data,
+    selectedItem,
+    setSelectedItem,
+    visible,
+    setVisible,
+    checked,
+    setChecked,
+    items,
+  } = useHooks();
+
   const {
     container,
+    filterContainer,
     header,
     subHeader,
     labelHeader,
     labelSubHeader,
-    label,
-    subLabelContainer,
+    dropDownContainer,
+    cutOffContainer,
   } = styles;
 
   return (
     <View style={container}>
+      <View style={filterContainer}>
+        <View style={dropDownContainer}>
+          <CustomDropdown
+            label="Select Month"
+            mode="outlined"
+            list={items}
+            visible={visible}
+            value={selectedItem}
+            setValue={setSelectedItem}
+            onDismiss={() => setVisible(false)}
+            showDropDown={() => setVisible(true)}
+          />
+        </View>
+        <View style={cutOffContainer}>
+          <RadioButton.Item
+            label="1st"
+            value="first"
+            status={checked === "first" ? "checked" : "unchecked"}
+            onPress={() => setChecked("first")}
+          />
+          <RadioButton.Item
+            label="2nd"
+            value="second"
+            status={checked === "second" ? "checked" : "unchecked"}
+            onPress={() => setChecked("second")}
+          />
+        </View>
+      </View>
+
       <Text style={header}>Molave Youngs Milling Group</Text>
       <Text style={subHeader}>
         Mabini St., Maloloy-on, Molave, Zamboanga Del Sur
