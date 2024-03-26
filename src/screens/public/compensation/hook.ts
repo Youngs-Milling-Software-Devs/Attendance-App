@@ -66,7 +66,14 @@ export const useHooks = () => {
     {
       id: "8",
       title: "Physical Working Hours",
-      data: [{ description: "Net Earnings", value: "9,500.00" }],
+      data: [
+        { description: "Working Days", value: "15" },
+        { description: "Tardiness hr/s", value: "3:00" },
+        { description: "Overtime hr/s", value: "1:30" },
+        { description: "Night Diff hr/s", value: "6:00" },
+        { description: "Number Of Holidays", value: "2" },
+        { description: "Number Of Rest Days", value: "4" },
+      ],
     },
   ];
 
