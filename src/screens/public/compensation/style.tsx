@@ -5,15 +5,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: "100%",
     height: "100%",
-    // borderWidth: 1,
-    // borderColor: "red",
   },
   filterContainer: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    // borderWidth: 1,
-    // borderColor: "red",
   },
   header: {
     textAlign: "center",

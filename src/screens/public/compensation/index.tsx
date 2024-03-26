@@ -2,7 +2,6 @@ import { Text, View } from "react-native";
 import { useHooks } from "./hook";
 import { styles } from "./style";
 import CustomFlatList from "../../../components/FlatList";
-import { useState } from "react";
 import { RadioButton } from "react-native-paper";
 import CustomDropdown from "../../../components/Dropdown";
 
