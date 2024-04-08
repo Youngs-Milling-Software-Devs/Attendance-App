@@ -26,11 +26,7 @@ const {
 } = styles;
 
 export const LoginScreen = () => {
-  const { navigation } = useHooks();
-
-  const { control } = useForm<Credentials>({
-    defaultValues: {},
-  });
+  const { navigation, control, handleSubmit, handleFormSubmit } = useHooks();
 
   return (
     <View style={container}>
@@ -65,9 +61,10 @@ export const LoginScreen = () => {
             right={<TextInput.Icon icon="lock-open" />}
           />
           <Button
-            icon="camera"
+            icon="key-variant"
             mode="contained"
-            onPress={() => navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR)}
+            onPress={handleFormSubmit(handleSubmit)}
+            // onPress={() => navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR)}
             style={loginButton}>
             Login
           </Button>

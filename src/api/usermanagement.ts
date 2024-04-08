@@ -2,7 +2,7 @@ import axios from "axios";
 import { Endpoint } from "../constants/enums";
 
 const instance = axios.create({
-  baseURL: Endpoint.HRMIS,
+  baseURL: Endpoint.USERMANAGEMENT,
   headers: {
     Accept: "application/json",
     "Content-Type": "multipart/form-data",
