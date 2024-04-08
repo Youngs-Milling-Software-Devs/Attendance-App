@@ -26,8 +26,7 @@ const {
 } = styles;
 
 export const LoginScreen = () => {
-  const { navigation, control, handleSubmit, handleFormSubmit, sample } =
-    useHooks();
+  const { navigation, control, handleSubmit, handleFormSubmit } = useHooks();
 
   return (
     <View style={container}>
@@ -68,15 +67,6 @@ export const LoginScreen = () => {
             // onPress={() => navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR)}
             style={loginButton}>
             Login
-          </Button>
-
-          <Button
-            icon="key-variant"
-            mode="contained"
-            onPress={sample}
-            // onPress={() => navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR)}
-            style={loginButton}>
-            Get SecureStore
           </Button>
         </View>
       </View>

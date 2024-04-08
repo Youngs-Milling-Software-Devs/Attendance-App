@@ -11,6 +11,7 @@ import { AppDispatch } from "../../../state/store";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getSecureValue } from "../../../lib/SecureStore";
+import { EPublicScreen } from "../../../constants/enums";
 
 export const useHooks = () => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
@@ -32,14 +33,12 @@ export const useHooks = () => {
     dispatch(loginAsync({ username, password }));
   };
 
-  const sample = async () => {
-    const retrievedValue = await getSecureValue("access");
-    console.log("access", retrievedValue);
-  };
-
   useEffect(() => {
-    // console.log("reduxResponse", isSuccess, message);
+    console.log("reduxResponse", isSuccess, message);
+
+    isSuccess && navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR);
+    reset();
   }, [message]);
 
-  return { navigation, control, handleSubmit, handleFormSubmit, sample };
+  return { navigation, control, handleSubmit, handleFormSubmit };
 };

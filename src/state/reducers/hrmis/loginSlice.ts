@@ -36,7 +36,7 @@ const loginSlice = createSlice({
           const { username, password, ...data } = action.payload.data;
 
           if (data.access && typeof data.access === "string") {
-            setSecureValue("access", data.access);
+            setSecureValue("accessToken", data.access);
             const access = jwtDecode<IEmployee>(data.access);
             const { message } = action.payload;
 

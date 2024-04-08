@@ -1,6 +1,8 @@
 import * as SecureStore from "expo-secure-store";
 
-export const setSecureValue = async (key: string, value: string) => {
+type SecureKey = "accessToken" | "refreshToken";
+
+export const setSecureValue = async (key: SecureKey, value: string) => {
   await SecureStore.setItemAsync(key, value);
 };
 
