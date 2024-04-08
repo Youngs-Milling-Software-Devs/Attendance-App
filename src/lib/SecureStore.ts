@@ -6,6 +6,6 @@ export const setSecureValue = async (key: SecureKey, value: string) => {
   await SecureStore.setItemAsync(key, value);
 };
 
-export const getSecureValue = async (key: string) => {
+export const getSecureValue = async (key: SecureKey) => {
   return await SecureStore.getItemAsync(key);
 };

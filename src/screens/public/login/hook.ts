@@ -34,8 +34,6 @@ export const useHooks = () => {
   };
 
   useEffect(() => {
-    console.log("reduxResponse", isSuccess, message);
-
     isSuccess && navigation.navigate(EPublicScreen.BOTTOM_NAVIGATOR);
     reset();
   }, [message]);

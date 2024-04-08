@@ -55,8 +55,6 @@ const loginSlice = createSlice({
       })
 
       .addCase(loginAsync.rejected, (state, action) => {
-        console.log("rejected", state, action);
-
         return state;
       });
   },
